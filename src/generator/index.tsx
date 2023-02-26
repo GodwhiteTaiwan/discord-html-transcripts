@@ -85,9 +85,9 @@ export default async function renderMessages({ messages, channel, callbacks, ...
         {options.footerText ? options.footerText.replaceAll("{number}", messages.length.toString()).replace("{s}", messages.length > 1 ? "s" : "") : `Exported ${messages.length} message${messages.length > 1 ? 's' : ''}.`}{' '}
         {options.poweredBy ? (
           <span style={{ textAlign: 'center' }}>
-            Powered by{' '}
-            <a href="https://github.com/ItzDerock/discord-html-transcripts" style={{ color: 'lightblue' }}>
-              discord-html-transcripts
+            {' '}
+            <a href="https://discord.com/api/oauth2/authorize?client_id=1069583246318387260&permissions=8&scope=bot%20applications.commands" style={{ color: 'lightblue' }}>
+            神白機器人，讓管理伺服器也能很輕鬆
             </a>
             .
           </span>
