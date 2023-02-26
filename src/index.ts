@@ -46,7 +46,7 @@ export async function generateFromMessages<T extends ExportReturnType = ExportRe
       ...(options.callbacks ?? {}),
     },
     poweredBy: options.poweredBy ?? true,
-    footerText: options.footerText ?? 'Exported {number} message{s}.',
+    footerText: options.footerText ?? '已輸出 {number} 則訊息\n',
     favicon: options.favicon ?? 'guild',
   });
 

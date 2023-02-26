@@ -85,7 +85,7 @@ export default async function renderMessages({ messages, channel, callbacks, ...
         {options.footerText ? options.footerText.replaceAll("{number}", messages.length.toString()).replace("{s}", messages.length > 1 ? "" : "") : `已輸出 ${messages.length} 則訊息`}{' '}
         {options.poweredBy ? (
           <span style={{ textAlign: 'center' }}>
-            {'\n'}
+            {' '}
             <a href="https://discord.com/api/oauth2/authorize?client_id=1069583246318387260&permissions=8&scope=bot%20applications.commands" style={{ color: 'lightblue' }}>
             神白機器人，讓管理伺服器也能很輕鬆
             </a>
